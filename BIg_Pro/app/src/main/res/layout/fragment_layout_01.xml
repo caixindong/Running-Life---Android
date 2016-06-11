@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.caixindong.runninglife_android.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.6"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="100"
+                android:id="@+id/distanceLabel"
+                android:textColor="@color/Indigo_colorPrimary"
+                android:textSize="160sp"
+                android:layout_weight="0.6"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="总公里"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/Indigo_colorPrimary"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_weight="0.15" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="10"
+                        android:id="@+id/countLabel"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/Indigo_colorPrimary"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="跑步次数"
+                        android:id="@+id/textView5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/Indigo_colorPrimary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text="0&apos;0&apos;&apos;/km"
+                        android:id="@+id/speedLabel"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:textSize="20sp"
+                        android:textColor="@color/Indigo_colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text="平均速度"
+                        android:id="@+id/textView7"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:textSize="20sp"
+                        android:textColor="@color/Indigo_colorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.4">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="GO"
+                android:id="@+id/gobtn"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:textSize="30sp"
+                android:background="@drawable/shape" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

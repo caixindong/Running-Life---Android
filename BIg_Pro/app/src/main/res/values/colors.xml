@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+    <color name="startbtn_color">#19c41c</color>
+    <color name="stopbtn_color">#f25347</color>
+    <color name="pausebtn_color">#f29f31</color>
+    <color name="cardview_dark_background">#fcfbfb</color>
+</resources>

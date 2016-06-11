@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    card_view:cardBackgroundColor="@color/cardview_dark_background"
+    card_view:cardCornerRadius="5dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10000"
+        android:id="@+id/item_kcal"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_alignBottom="@+id/item_distance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时长：00:09:08"
+        android:id="@+id/item_dur"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/item_kcal"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离：10km"
+        android:id="@+id/item_distance"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/item_dur" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="步数：100"
+        android:id="@+id/item_step"
+        android:layout_alignTop="@+id/item_distance"
+        android:layout_toEndOf="@+id/item_dur"
+        android:layout_marginStart="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="速度：5m/s"
+        android:id="@+id/item_speed"
+        android:layout_alignTop="@+id/item_dur"
+        android:layout_alignStart="@+id/item_step" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="卡路里"
+        android:id="@+id/textView"
+        android:layout_below="@+id/item_kcal"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/item_dur"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06-30 09:09"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/item_starttime"
+        android:layout_above="@+id/item_kcal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_alignEnd="@+id/item_distance" />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
